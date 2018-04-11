@@ -1,0 +1,882 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<style type="text/css">
+ #top_tx{
+    padding:13px 0px 9px;
+	display:block;
+	width:1000px;
+	margin:0 auto;
+	height:48px;
+ }
+ #logo_tx{
+	position: relative;
+	float:left;
+	
+ }
+ .logo{
+    height:44px;
+    width:134px;
+	display:block;
+	background-image:url("http://mat1.gtimg.com/www/images/qq2012/qqlogofilter1_5.png");
+    background-repeat:no-repeat;
+ }
+ #skin_con{ 
+   float:left;
+   width:330px;
+   height:70px;
+ }
+ .skinstyle{
+   position:absolute;
+   display:block;
+   top:0;
+ }
+ .skinstyle,.skinstyle img{
+   width:330px;
+   height:70px;
+ }
+ #form_search{
+   float:left;
+   display:block;
+ }
+ .searchTxt,.searchTxt input{
+    width:290px;
+	height:35px;
+	position:relative;
+	background:#fff;
+	border: 1px solid #c1c4cb;
+	float:left;
+ }
+ #searchBtn{
+    color:#fff;
+	cursor:pointer;
+	font-size:16px;
+	height:40px;
+	width:90px;
+	padding: 1px 6px;
+	background-color:#2196f3;
+	float:left;
+	font-family:'微软雅黑';
+	border:0px;
+	background:url("http://mat1.gtimg.com/www/images/qq2012/sogouSearchBtn.png")
+ }
+ .icon_tx{
+   display:block;
+ }
+ #qzoneGrayIcon,#mailGrayIcon{
+    position:relative;
+	padding: 7px 8px 6px;
+	display:block;
+	float:right;
+ }
+ #loginGrayIcon{
+    position: relative;
+    margin: 0 8px;
+	display:block;
+	float:right;
+ }
+ #icon_tx .qzone,#icon_tx .mail{
+    display:block;
+    float:left;
+	width:25px;
+	height:24px;
+ }
+ #icon_tx .login{
+    display: block;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ededed;
+	float: left;
+ }
+ #icon_tx .qzone{
+    background:url("http://mat1.gtimg.com/www/images/qq2012/qzoneIcon.png") no-repeat;
+ }
+ #icon_tx .mail{
+    background:url("http://mat1.gtimg.com/www/images/qq2012/mailIcon.png") no-repeat;
+ }
+ #icon_tx .login{
+    background:url("loginGrayIcon.jpg") no-repeat;
+ }
+ 
+ .navBeta{
+    padding:8px 0 0 12px;
+	width:988px;
+	height:57px;
+	line-height:22px;
+	font-size:14px;
+	margin:0 auto;
+	position:relative;
+	background: url("http://mat1.gtimg.com/www/images/qq2012/chanelNavBeta2_141013.jpg") no-repeat;
+ }
+ .navBeta .navBetaInner{
+   font-family:'微软雅黑';
+   width:988px;
+   height:57px;
+   margin:0;
+   padding:0;
+   overflow:hidden;
+ }
+ .navBeta a{
+   color:#fff;
+   margin:0 2px 0 2px;
+   padding:3px;
+   text-decoration:none;
+   
+ }
+ 
+ .navBeta div{
+    float:left;
+	text-align:left;
+    padding: 0 10px;
+	width:126px;
+	height:25px;
+ }
+ div{display:block;}
+ 
+ .navBeta .navMoreLayout{
+    width:51px;
+	padding:0;
+	display:inline;
+	position:relative;
+	margin: -42px 0 0 916px;
+	padding-top:10px;
+ }
+ .navBeta .navMoreActived{
+    background: url("http://mat1.gtimg.com/www/images/qq2012/temp/navMoreDown.png") no-repeat 39px 10px!important;
+ } 
+ .navBeta #navMore ul {
+    width: 51px;
+    float: left;
+    padding-bottom: 5px;
+    background: #469fe1;
+    display: none;
+  }
+  ul{
+    list-style-type: disc;
+  }
+  .navBeta #navMore {
+     text-indent: 8px;
+     color: #fff;
+	 font-family:"微软雅黑";
+  }
+  .adleft{
+     width:700px;
+	 height:75px;
+	 position:relative;
+	 float:left;
+  }
+  .adrightScroll{
+     width:280px;
+	 float:right;
+	 position:relative;
+  }
+  .layoutad{
+     width:1000px;
+	 margin:0 auto;
+	 position:relative;
+	 height: 75px;
+  }
+  .adleft a{
+     position:relative;
+     display:block;
+     width:700px;
+	 height:75px;
+	 background-size: 700px 75px;
+     background-position: 50% 50%;
+	 background-image: url("http://ra.gtimg.com/web/default_fodders/700x75_0.jpg?v=20171024");
+  }
+  .adrightScroll .jbBox{
+     width:280px;
+	 height:75px;
+	 background:url("http://mat1.gtimg.com/www/images/qq2012/bkysp20140623.png") no-repeat center center;
+     position:relative;
+  }
+  .adScrollBtn{
+     position:absolute;
+	 top:5px;
+	 right:0;
+	 z-index:2;
+	 width:36px;
+	 height:4px;
+  }
+  .adScrollBtn span{
+    width: 4px;
+    height: 4px;
+    float: left;
+    margin-right: 5px;
+    display: block;
+    overflow: hidden;
+	background:url("http://mat1.gtimg.com/www/images/qq2012/adScrollBtn02.png")
+  }
+  
+  .layoutad2{
+     width:1000px;
+	 margin:0 auto;
+	 margin-top:12px;
+	 position:relative;
+  }
+  .layoutleft .layoutright{
+     height:970px;
+  }
+  .layoutad2 .layoutleft{
+     width:700px;
+	 float:left; 
+  }
+  .layoutright{
+     width:280px;
+	 float:right;
+  }
+  .leftNews{
+     float:left;
+	 width:350px;
+	 position:relative;
+  }
+   .leftNews .hd{
+     height:33px;
+	 border-top:1px solid #c8dcf2;
+   }
+   .newsTab{
+     float: left;
+     height: 33px;
+     overflow: hidden;
+     margin-top: -1px;
+   }
+   .newstyle{
+      display:block;
+      text-decoration:none;
+	  color:#0873c0;
+	  font-weight:700;
+	  text-align:center;
+	  font-size:14px;
+	  padding:3px 18px 0;
+	  height:30px;
+	  line-height:28px;
+	  margin-top:0;
+	  overflow: hidden;
+	  float:left;
+   }
+   .newsTab a:hover{
+      text-decoration:underline;
+   }
+   .newsTab .selected{
+      background:url("http://mat1.gtimg.com/www/images/qq2012/tabBg02_0702.png") repeat-x!important;
+      
+   }
+   .weather{
+      float:right;
+	  color:#666;
+	  padding:8px 15px 2px 2px;
+	  height:22px;
+	  position:relative;
+   }
+   .weatherTemperature{
+      display:block; 
+      width:24px;
+	  cursor:pointer;
+	  float:right;
+	  font-size:12px;
+	  margin-top: 1px;
+      line-height: 16px;
+   }
+   .ipWeather{
+      display:block;
+	  float:right;
+	  cursor:pointer;
+	  font-size:12px;
+	   margin-top: 1px;
+      line-height: 16px;
+	  width:24px;
+   }
+   .weathersun{
+      display:block;
+	  background:url("http://mat1.gtimg.com/www/images/qq2012/weather/20120906/sun.png") no-repeat;
+      float:right;
+	  width:16px;
+	  height:16px;
+	  margin:0 8px;
+	  cursor:pointer;
+   }
+   .newContent1,.newContent2{
+      float:left;
+	  border: 0;
+   }
+   .newContent1 ul,.newContent2 ul{
+      display: block;
+      list-style-type:none;
+	  float:left;
+	  margin: 0;
+      padding: 0;
+   }
+   .newContent1 ul li,.newContent2 ul li{
+      height:28px;
+	  line-height:28px;
+	  font-size:14px;
+   }
+   .newContent1 ul li a,.newContent2 ul li a{
+      color: #2d374b;
+	  text-decoration:none;
+   }
+   .stylebold{
+      font-weight: 700;
+	  color:#3b639f;
+   }
+   .content ul li a:hover{
+      color: #cd0200;
+      text-decoration: underline;
+   }
+   
+   .leftview{
+      height:252px;
+	  float:right;
+	  width:330px;
+   }
+   .leftview .todaytab{
+      height:32px;
+	  border-top:1px solid #c8dcf2;
+	  position:relative;
+   }
+   .todaytab h2{
+     margin-top: 8px;
+   }
+   .todaytab h2 a{
+      color: #0873c0;
+	  text-decoration:none;
+	  font-size:14px;
+   }
+   .todaytab .time{
+      position:absolute;
+	  right:0px;
+	  top:7px;
+	  width:83px;
+	  height:16px;
+	  display:inline-block;
+	  background:url("http://mat1.gtimg.com/www/qq_index/imgs/timeqq.png")
+	  
+   }
+   .viewcontent1{
+      <!-- padding-top:5px; -->
+	  border:0;
+	  width:320px;
+	  height:200px;
+   }
+   #todaytop{
+      text-align:center;
+	  height:28px;
+	  line-height:28px;
+	  float:left;
+	  margin:0;
+	  padding:0;
+   }
+   #todaytop a{
+     text-decoration:none;
+	 color:#3b639f;
+	 font-size:14px;
+   }
+   .nostyle{
+      list-style-type:none;
+	  width:326px;
+	  float:left;
+	  margin:0;
+	  padding:0;
+   }
+   .nostyle a{
+      text-decoration:none;
+	  font-size:14px;
+	  color: #172c45;
+   }
+   .nostyle a:hover{
+      color: #cd0200;
+      text-decoration: underline;
+   }
+   .nostyle li{
+     height:28px;
+	 line-height:28px;
+   }
+   .rightArea{
+     position:relative;
+	 border: 1px solid #d2e1f1;
+	 width:278px;
+	 font-size:14px;
+	 background: #fff;
+     float: right;
+   }
+   .rightProduct{
+     width: 248px;
+     padding-right: 30px;
+	 background: url("http://mat1.gtimg.com/www/images/qq2012/productNavBg1.5.516.png") no-repeat right top;
+   }
+   .rightProduct a{
+     text-decoration:none;
+	 font-size:14px;
+	 font-family:arial;
+	 color: #294c7f;
+   }
+   .rightProduct a:hover{
+     text-decoration:underline;
+   }
+   .rightProduct .productLine01{
+     width: 238px;
+     padding-left: 10px;
+     height: 26px;
+     padding-top: 10px;
+   }
+   .rightProduct .productLine02{
+     width: 238px;
+     padding-left: 10px;
+     height: 26px;
+     padding-top: 11px;
+	 background: #f5f8fc;
+   }
+   .rightProduct .productLine03{
+      height: 60px;
+	  line-height:28px;
+	  padding-top: 4px;
+	  padding-left: 10px;
+	  width: 238px;
+   }
+   .rightProduct .productLine04{
+      height: 59px;
+      line-height: 28px;
+      padding-top: 3px;
+	  padding-left: 10px;
+	  width: 238px;
+	  background: #f5f8fc;
+   }
+   .rightProduct .productLine05{
+     height: 26px;
+     padding-top: 11px;
+	 padding-left: 10px;
+	 width: 238px;
+   }
+   .imgArea{
+      float:left;
+	  display:block;
+	  margin-bottom: 4px;
+	  margin-top:11px;
+   }
+   .imgtext{
+      float:right;
+	  width:108px;
+	  height:70px;
+	  width:208px;
+	  padding: 0 22px 0 0;
+
+    
+   }
+   .imgtext a {
+      text-decoration:none;
+	  color: #3b639f;
+	  font-size:14px;
+	  height:70px;
+	  line-height: 26px;
+	  font-weight:700;
+	  
+   }
+   .leftvideoNews .todaytab{
+     position:relative;
+	 background: url("http://mat1.gtimg.com/www/images/qq2012/tabBg01_0702.png") no-repeat 0 0;
+     border-top: 0;
+     overflow: hidden;
+	 height: 32px;
+   }
+   .leftvideoNews .todaytab a{
+      text-decoration:none;
+	  color: #0873c0;
+	  font-weight:bold;
+	  font-size: 14px;
+	  padding-top: 9px;
+	  height:21px;
+	  text-align:center;
+	  line-height: 16px;
+      margin-left: -1px;
+   }
+   .leftvideoNews .todaytab .selected{
+      background: url("http://mat1.gtimg.com/www/images/qq2012/tabBg02_0702.png") no-repeat;
+      border-left: 1px #fff solid;
+      border-right: 1px #fff solid;
+	  
+   }
+   .imgnews{
+     display:block;
+   }
+   .leftimg{
+      width:145px;
+	  float:left;
+   }
+   .rightimg{
+     width:145px;
+	 float:right;
+   }
+   .p_img{
+     height: 18px;
+     line-height: 18px;
+	 display:block;
+	 margin:0;
+	 padding:0;
+	 text-align: center;
+   }
+   .imgnews a{
+     text-decoration:none;
+	 color: #172c45;
+	 font-size:12px;
+	  
+   }
+</style>
+</head>
+<body>
+<div id="wrapper">
+  <div id="top_tx">
+     <div id="logo_tx">
+	    <a href="#" class="logo">
+		</a>
+	 </div>
+	 <div id="skin_con">
+	    <a class="skinstyle" title="清明"> 
+            <img src="http://mat1.gtimg.com/www/qqskin/20180405_qingming.png">
+		</a>
+	 </div>
+	 <div id="form_search">
+	    <div class="searchTxt">
+		   <input type="text" autocomplete="off"></input>
+		</div>
+		<button type="submit" id="searchBtn"> </button>
+	 </div>
+	 <div id="icon_tx">
+	    <div id="loginGrayIcon">
+		  <a href="javascript:void(0)" class="login" target="_self"></a>
+		</div>
+	    
+		<div id="mailGrayIcon">
+		  <a href="http://mail.qq.com" class="mail" target="_blank"></a>
+		</div>
+		<div id="qzoneGrayIcon">
+		  <a href="http://qzone.qq.com" class="qzone" target="_blank"></a>
+		</div>
+	 </div>
+  </div>
+  <div id="navBeta" class="navBeta">
+     <div class="navBetaInner">
+	   <div>
+	     <strong>
+		   <a href="http://news.qq.com/" target="_blank">新闻</a>
+		 </strong>
+		 <a href="http://pp.qq.com/" target="_blank">图片</a>
+	     <a href="http://mil.qq.com/" target="_blank">军事</a>
+	   </div>
+	   <div>
+	     <strong>
+		   <a href="http://v.qq.com/" target="_blank">视频</a>
+		 </strong>
+		 <a href="http://v.qq.com/tv/" target="_blank">热剧</a>
+	     <a href="http://v.qq.com/variety/" target="_blank">综艺</a>
+	   </div>
+	   <div>
+	     <strong>
+		   <a href="http://ent.qq.com/" target="_blank">娱乐</a>
+		 </strong>
+		 <a href="http://ent.qq.com/star/" target="_blank">明星</a>
+	     <a href="http://ent.qq.com/movie/" target="_blank">电影</a>
+	   </div>
+	   <div>
+	     <strong>
+		   <a href="http://auto.qq.com/" target="_blank">汽车</a>
+		 </strong>
+		 <a href="http://data.auto.qq.com/car_brand/index.shtml" target="_blank">车型</a>
+	     <a href="http://dc2.jd.com/auto.php?service=transfer&type=dmp&from=dmp&kid=72&klid=11726&to=http://www.jd.com" target="_blank">购物</a>
+	   </div>
+	   <div>
+	     <strong>
+		   <a href="http://tech.qq.com/" target="_blank">科技</a>
+		 </strong>
+		 <a href="http://digi.tech.qq.com/" target="_blank">数码</a>
+	     <a href="http://digi.tech.qq.com/mobile/" target="_blank">手机</a>
+	   </div>
+	   <div>
+	     <strong>
+		   <a href="http://edu.qq.com/" target="_blank">教育</a>
+		 </strong>
+		 <a href="http://class.qq.com/" target="_blank">课程</a>
+	     <a href="http://abroad.qq.com/" target="_blank">出国</a>
+	   </div>
+	   <div style="width:84px;">
+	     <strong>
+		   <a href="http://gongyi.qq.com/" target="_blank">公益</a>
+		 </strong>
+		 <a href="http://foxue.qq.com/" target="_blank">佛学</a>
+	   </div>
+	   <div>
+	     <strong>
+		   <a href="http://finance.qq.com/" target="_blank">财政</a>
+		 </strong>
+		 <a href="http://stock.qq.com/" target="_blank">证券</a>
+	     <a href="http://finance.qq.com/money/" target="_blank">理财</a>
+	   </div>
+	   <div>
+	     <strong>
+		   <a href="http://sports.qq.com/" target="_blank">体育</a>
+		 </strong>
+		 <a href="http://sports.qq.com/nba/" target="_blank">NBA</a>
+	     <a href="http://sports.qq.com/cba/" target="_blank">CBA</a>
+	   </div>
+	   <div>
+	     <strong>
+		   <a href="http://fashion.qq.com/" target="_blank">时尚</a>
+		 </strong>
+		 <a href="http://health.qq.com/" target="_blank">健康</a>
+	     <a href="http://baby.qq.com/" target="_blank">育儿</a>
+	   </div>
+	   <div>
+	     <strong>
+		   <a href="http://house.qq.com/" target="_blank">房产</a>
+		 </strong>
+		 <a href="http://www.jia360.com" target="_blank">家具</a>
+	     <a href="http://hea.qq.com" target="_blank">家电</a>
+	   </div>
+	   <div>
+	     <strong>
+		   <a href="http://games.qq.com/" target="_blank">游戏</a>
+		 </strong>
+		 <a href="http://kid.qq.com/" target="_blank">儿童</a>
+	     <a href="http://astro.fashion.qq.com/" target="_blank">星座</a>
+	   </div>
+	   <div>
+	     <strong>
+		   <a href="http://cul.qq.com/" target="_blank">文化</a>
+		 </strong>
+		 <a href="http://dajia.qq.com/" target="_blank">大家</a>
+	     <a href="http://book.qq.com/" target="_blank">文学</a>
+	   </div>
+	   <div style="width:60px">
+	     <strong>
+		   <a href="http://v.qq.com/paike/" target="_blank">拍客</a>
+		 </strong>
+	   </div>
+	 </div>
+	 <div class="navMoreLayout">
+	     <div class="navMoreActived" id="navMore">
+		   <span>更多</span>
+		   <ul style="display: none;">
+		    <li>天气</li>
+		    <li>谷雨</li>
+		    <li>旅游</li>
+		    <li>科普</li>
+		    <li>港股</li>
+		    <li>德甲</li>
+		    <li>美容</li>
+		    <li>动漫</li>
+		    <li>享看</li>
+		    <li>全部</li>
+		   </ul>
+		 </div>
+	  </div>
+  </div>
+  <div class="layoutad">
+     <div class="adleft">
+	   <a href="http://time.qq.com/?pgv_ref=ad" target="_blank"></a>
+	 </div>
+	 <div class="adrightScroll">
+	    <div class="adScrollBtn" id="adScrollBtn">
+		   <span class="now"></span>
+		   <span></span>
+		   <span></span>
+		</div>
+		<div class="jbBox" id="jbBox" style="display:block">
+		   <a class="linkA" href="http://news.qq.com/zt2014/2014qtnews/ccybspxd.htm" target="_blank"></a>
+		   <a class="linkB" href="http://www.qq.com/jubaoxuzhi.htm" target="_blank"></a>
+		</div> 
+		<div class="wlaqBox" id="wlaqBox" style="display:none">
+		   <a href="http://110.qq.com" target="_blank"></a>
+		</div>
+		<div class="daBox" id="daBox" style="display:none">
+		   <a href="http://report.12377.cn:13225/toreportinputNormal_anis.do" target="_blank"></a>
+		</div>
+	 </div>
+  </div>
+  <div class="layoutad2">
+    <div class="layoutleft">
+	     <div class="leftNews">
+		    <div class="hd">
+			    <div class="newsTab">
+			      <a class="selected newstyle" href="http://news.qq.com/">要闻</a>
+				  <a class="newstyle" href="http://js.qq.com/">江苏新闻</a>
+			    </div>
+			    <div class="weather" style="width:84px;display:block">
+				   <span class="ipWeather">25℃</span>
+				   <div class="weathersun"></div>
+				   <span class="weatherTemperature">南京</span>
+				  
+				</div>
+			</div>
+		    <div class="content">
+			  <div class="newContent1">
+			    <ul>
+				  <li>
+				     <a href="http://new.qq.com/omn/SJD2018040900399000" target="_blank" class="stylebold">人民日报微视频：开放的大门不会关上</a>
+				  </li>
+				  <li>
+				     <a href="https://news.qq.com/a/20180408/021435.htm" target="_blank">习近平会见联合国秘书长古特雷斯</a>
+				  </li>
+				  <li>
+				     <a href="http://new.qq.com/omn/20180408A0GJSH00" target="_blank">全球目光聚焦博鳌！中国将再次发出声音</a>
+				  </li>
+				  <li>
+				     <a href="http://new.qq.com/omn/20180409A0PLNH00" target="_blank">韩国检方正式起诉李明博 涉嫌受贿110亿韩元</a>
+				  </li>
+				</ul>
+			  </div>
+			  <div class="newContent2">
+			    <ul>
+				  <li>
+				     <a href="http://new.qq.com/omn/20180409A0OMFP00" target="_blank">周小川迎新工作：接替曾培炎任博鳌论坛副理事长</a>
+				  </li>
+				  <li>
+				     <a href="http://news.qq.com/a/20180409/005979.htm" target="_blank">中国人民银行：3月末我国外汇储备3.14万亿美元</a>
+				  </li>
+				  <li>
+				     <a href="http://new.qq.com/omn/20180409A0ITXH00" target="_blank" class="stylebold">美媒曝特朗普未经讨论自行决定对华加征关税</a>
+				  </li>
+				  <li>
+				     <a href="https://news.qq.com/a/20180409/016501.htm" target="_blank">央视原创时政微视频|习声回响</a>
+				  </li>
+				</ul>
+			    <div class="imgArea">
+				  <a target="_blank" href="http://new.qq.com/omn/20180409A0Z5SL00"> 
+				    <img src="http://img1.gtimg.com/ninja/2/2018/04/ninja152330452858900.jpg">
+				  </a>
+				</div>
+				<div class="imgtext">
+				  <h3>
+				    <a href="http://new.qq.com/omn/20180409A0Z5SL00">探访长城烧砖人 迎千度高温酷热却不敢穿得少</a>
+				  </h3>
+				</div>
+			  </div>
+			
+			</div>
+		 </div>
+		 <div class="leftview">
+		   <div class="todaytab">
+		     <h2>
+			    <a href="http://view.news.qq.com/">今日话题</a>
+			 </h2>
+			 <a href="http://time.qq.com/?pgv_ref=qqcom" class="time"></a>
+		   </div>
+		   <div class="viewcontent1">
+		      <h3 id="todaytop">
+			    <a href="http://view.news.qq.com/original/intouchtoday/n4209.html" target="_blank">帮癌症亲人解脱的手段，不应包括安乐死</a>
+			  </h3>
+			  <ul class="nostyle">
+			     <li>
+				    <a href="http://new.qq.com/cmsn/20180408/20180408A06DQE00">青团火了，但那些年年亏损的老字号还有救吗？</a>
+                 </li>	
+                 <li>
+				    <a href="http://new.qq.com/cmsn/20180409/20180409003921">“城管外包”纠违引冲突，权力边界必须厘清</a>
+                 </li>	
+                 <li>
+				    <a href="http://new.qq.com/cmsn/20180409/20180409005776">“精神啃老”何尝不是啃老</a>
+                 </li>
+                 <li>
+				    <a href="http://new.qq.com/cmsn/20180409/20180409005557">“看图配钥匙”谨防“配忧虑”</a>
+                 </li>
+                 <li>
+				    <a href="http://new.qq.com/cmsn/20180409/20180409003823">同龄人抛弃论无非是一惊一乍的“震惊体”</a>
+                 </li>
+                 <li>
+				    <a href="http://new.qq.com/cmsn/20180409/20180409003726">校车拒载：高校的服务和学生的权利</a>
+                 </li>				 
+			  </ul>
+		   </div>
+		   <div class="leftvideoNews">
+		     <div class="todaytab">
+			    <a href="http://v.qq.com/" class="selected" style="position:absolute;top:0;left:0;">今日热播</a>
+				<a href="http://v.qq.com/tv/" style="position:absolute;top:0;left:90px;">影视剧</a>
+				<a href="http://v.qq.com/variety/" style="position:absolute;top:0;left:170px;">综艺</a>
+			 </div>
+			 <div class="imgnews">
+			   <div class="leftimg">
+			     <div >
+			      <a href="http://v.qq.com/x/cover/8ukywncg3hugphw/k06254riwbd.html">
+				    <img src="http://img1.gtimg.com/ninja/2/2018/04/ninja152323948867135.jpg">
+				  </a>
+				 </div>
+				 <p class="p_img">
+				   <a href="http://v.qq.com/x/cover/8ukywncg3hugphw/k06254riwbd.html">无观众女孩仍卖力演出</a>
+				 </p>
+				 
+			   </div>
+			   <div class="rightimg">
+			      <div>
+				    <a href="https://v.qq.com/x/page/g0623yhap2d.html"><img src="http://img1.gtimg.com/news/pics/hv1/75/22/2270/147612435.jpg"></a>
+				  </div>
+				  <p class="p_img">
+				    <a href="https://v.qq.com/x/page/g0623yhap2d.html">《乐享中国》为博鳌集赞</a>
+				 </p>
+				  
+			   </div>
+			 </div>
+			 
+			 <div>
+			   
+			 </div>
+		   </div>
+		 </div>
+	</div>
+	<div class="layoutright">
+	  <div class="rightArea">
+	    <div class="rightProduct">
+		  <div class="productLine01">
+		     <a href="http://im.qq.com/" style="margin-right:8px;">QQ</a>
+			 <a href="http://mail.qq.com/" style="margin-right:8px;">邮箱</a>
+			 <a href="http://vip.qq.com/?ADTAG=www.qq.com" style="margin-right:8px;">会员</a>
+			 <a href="https://guanjia.qq.com/?ADTAG=news.QQCOM" style="margin-right:8px;">电脑管家</a>
+			 <a href="http://pc.qq.com/">软件</a>
+		  </div>
+		  <div class="productLine02">
+		     <a href="http://weixin.qq.com/" style="margin-right:8px;">微信</a>
+			 <a href="http://qzone.qq.com/" style="margin-right:8px;">空间</a>
+			 <a href="http://ke.qq.com/index.html?from=72" style="margin-right:8px;">课堂</a>
+			 <a href="http://film.qq.com/" style="margin-right:8px;">视频VIP</a>
+			 <a href="https://cloud.tencent.com/?fromSource=gwzcw.756432.756432.756432">腾讯云</a>
+		  </div>
+		  <div class="productLine03">
+		    <a href="http://news.qq.com/mobile/" style="margin-right:10px;">新闻APP</a>
+			<a href="http://sports.qq.com/kbs/" style="margin-right:10px;">体育APP</a>
+			<a href="http://kuaibao.qq.com/" style="margin-right:10px;">快报</a>
+			<a href="https://om.qq.com/" style="margin:0">企鹅号</a>
+			<a href="http://v.qq.com/download.html#pc" style="margin-right:10px;">视频</a>
+			<a href="http://m.qq.com/" style="margin-right:10px;">手机管家</a>
+			<a href="http://browser.qq.com/" style="margin-right:19px;">浏览器</a>
+			<a href="http://android.myapp.com/?g_f=990371" style="margin:0">应用宝</a>
+		  </div>
+		  <div class="productLine04">
+		     <a href="http://lol.qq.com/index.shtml?ADTAG=media.innerenter.qqcom.index_navigation" style="margin-right:8px;">LOL</a>
+			 <a href="http://dnf.qq.com/?ADTAG=media.innerenter.qqcom.index_navigation" style="margin-right:8px;">DNF</a>
+			 <a href="http://cf.qq.com/?ADTAG=media.innerenter.qqcom.index_navigation" style="margin-right:8px;">CF</a>
+			 <a href="http://mxd2.qq.com/main.htm?ADTAG=media.innerenter.qqcom.index_navigation" style="margin-right:8px;">冒险岛2</a>
+			 <a href="http://x5.qq.com/main.shtml?ADTAG=media.innerenter.qqcom.index_navigation" style="margin-right:0px;">QQ炫舞</a>
+			 <a href="http://iwan.qq.com/index.htm?ADTAG=media.innerenter.qqcom.indexnavigation" style="margin-right:8px;">爱玩</a>
+			 <a href="http://nz.qq.com/main.shtml?ADTAG=media.innerenter.qqcom.index_navigation" style="margin-right:8px;">逆战</a>
+			 <a href="http://wuxia.qq.com/?ADTAG=media.innerenter.qqcom.index_navigation" style="margin-right:8px;">天刀</a>
+			 <a href="http://huoying.qq.com/act/a20141009landingpage/index.htm?via=45&ADTAG=ied.neiguang&ADTAG=media.innerenter.qqcom.index_navigation" style="margin-right:8px;">火影OL</a>
+			 <a href="http://pvp.qq.com/?ADTAG=media.innerenter.qqcom.index_navigation">王者</a>
+		  </div>
+		  <div class="productLine05">
+		     <a href="http://dc2.jd.com/auto.php?service=transfer&type=dmp&from=dmp&kid=77&klid=11727&to=http://www.jd.com" style="margin-right:6px">京东</a>
+			 <a href="https://qian.qq.com?stat_data=oth87ppcsy00222&ADTAG=SCQD.BD.PC.TXDH1" style="margin-right:6px">理财通</a>
+			 <a href="http://fm.qq.com/" style="margin-right:6px">企鹅FM</a>
+			 <a href="http://pay.qq.com/" style="margin-right:6px">Q币</a>
+			 <a href="http://www.qq.com/map/" style="margin-right:6px">全部</a>
+		  </div>
+		  <div class="productLine06"></div>
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+</div>
+<script>
+
+</script>
+</body>
+</html>
